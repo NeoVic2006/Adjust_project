@@ -10,14 +10,21 @@ Install dependencies with poetry.lock file usinsg this command: **poetry install
 **1)** Show the number of impressions and clicks that occurred before the 1st of June 2017, 
 broken down by channel and country, sorted by clicks in descending order:
 
-http://127.0.0.1:8000/api/stock?date_to=2017-05-19&groupby=channel&groupby=country&ordering=-clicks   
+http://127.0.0.1:8000/api/stock?date_to=2017-05-19&groupby=channel&groupby=country&ordering=-clicks
+
+date_to=2017-05-19  // Choosing last date as 1st of June 2017
+groupby=channel  //  Grouping by channel
+groupby=country  //  Grouping by country
+ordering=-clicks // Ordering by desc clicks field
+
 **Result sample:**   
 ![image](https://user-images.githubusercontent.com/48185629/126563352-a1b46acb-be0d-4292-b5a2-0df38349630d.png)
 
 
 **2)** Show the number of installs that occurred in May of 2017 on iOS, broken down by date, sorted by date in ascending order:
 
-http://127.0.0.1:8000/api/stock?date_from=2017-05-01&date_to=2017-05-31&os=ios&groupby=date&ordering=date   
+http://127.0.0.1:8000/api/stock?date_from=2017-05-01&date_to=2017-05-31&os=ios&groupby=date&ordering=date 
+
 **Result sample:**   
 ![image](https://user-images.githubusercontent.com/48185629/126563431-bca6f17a-2bee-4079-ae1d-d301be338db2.png)
 
