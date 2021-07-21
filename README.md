@@ -12,6 +12,7 @@ broken down by channel and country, sorted by clicks in descending order:
 
 http://127.0.0.1:8000/api/stock?date_to=2017-05-19&groupby=channel&groupby=country&ordering=-clicks
 
+**Structure of url:**      
 date_to=2017-05-19  // Choosing last date as 1st of June 2017   
 groupby=channel  //  Grouping by channel     
 groupby=country  //  Grouping by country     
