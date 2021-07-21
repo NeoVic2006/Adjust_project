@@ -1,7 +1,7 @@
 # Adjust_project
 
-**Installation:** 
-Used: **python "^3.9", Django "^3.2.5", pgadmin4 "^5.5"**.                      
+**Installation:**      
+Used: **python "^3.9", Django "^3.2.5", pgadmin4 "^5.5"**.                          
 Copy this repository: https://github.com/NeoVic2006/Adjust_project.git 
 
 Install dependencies with poetry.lock file usinsg this command: **poetry install**                       
