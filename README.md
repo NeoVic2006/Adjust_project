@@ -4,7 +4,7 @@
 Used: **python "^3.9", Django "^3.2.5", pgadmin4 "^5.5"**.                          
 Copy this repository: https://github.com/NeoVic2006/Adjust_project.git 
 
-Install dependencies with poetry.lock file usinsg this command: **poetry install**                       
+Install dependencies with poetry.lock file using this command: **poetry install**                       
 
 **APIs functionality:**     
 **1)** Show the number of impressions and clicks that occurred before the 1st of June 2017, 
