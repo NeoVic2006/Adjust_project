@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from app.models import Sales
+from app.models import Stock
 
 
-class SalesSerializer(serializers.ModelSerializer):
+class StockSerializer(serializers.ModelSerializer):
 
     date = serializers.DateField(format='%Y-%m-%d', required=False)
     channel = serializers.CharField(max_length=255, required=False)
@@ -14,6 +14,8 @@ class SalesSerializer(serializers.ModelSerializer):
     spend = serializers.FloatField()
     revenue = serializers.FloatField()
 
+    CPI = serializers.DecimalField(max_digits=10, decimal_places=2)
+
     class Meta:
-        model = Sales
-        fields = ('id', 'date', 'channel', 'country', 'os', 'impressions', 'clicks', 'installs', 'spend', 'revenue')
+        model = Stock
+        fields = ('id', 'date', 'channel', 'country', 'os', 'impressions', 'clicks', 'installs', 'spend', 'revenue', 'CPI')

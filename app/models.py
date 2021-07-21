@@ -1,10 +1,9 @@
 from django.db import models
 
 # Create your models here.
-from django.db import models
+from app.managers import StockQuerySet
 
-
-class Sales(models.Model):
+class Stock(models.Model):
     date = models.DateField(['%Y-%m-%d'])
     channel = models.CharField(max_length=255)
     country = models.CharField(max_length=255)
@@ -14,9 +13,5 @@ class Sales(models.Model):
     installs = models.IntegerField()
     spend = models.FloatField()
     revenue = models.FloatField()
-
-
-"""
-COPY app_sales(date,channel,country,os,impressions,clicks,installs,spend,revenue) 
-FROM 'C:\Adjust_project/dataset.txt' DELIMITER ','  CSV HEADER;
-"""
+    
+    objects = StockQuerySet.as_manager()
