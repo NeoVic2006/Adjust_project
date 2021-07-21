@@ -34,7 +34,7 @@ http://127.0.0.1:8000/api/stock?country=CA&groupby=channel&ordering=-CPI
 **Result sample:**  
 ![image](https://user-images.githubusercontent.com/48185629/126563519-b3fc770e-a8bc-47fd-a744-10d1da70099b.png)  
 
-**BD Scheme:**   
+**Database Scheme:**   
  ![image](https://user-images.githubusercontent.com/48185629/126563931-372e2cc9-553d-42d4-9d3c-2c5e298f0cfe.png)
 
 
